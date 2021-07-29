@@ -9,8 +9,8 @@
         <classes>
             <class name="learning.LoginTest">
                 <methods>
-                    <exclude name="LoginTest_enterGoodEmails_changeURL"/>
-                    <exclude name="LoginTest_enterWrongEmails_LoginErrorMsg"/>
+                    <include name="LoginTest_enterGoodEmails_changeURL"/>
+                    <include name="LoginTest_enterWrongEmails_LoginErrorMsg"/>
                 </methods>
             </class>
         </classes>
