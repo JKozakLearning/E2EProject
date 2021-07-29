@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="learning.Listeners"/>
+        <listener class-name="learning.AnnotationTransformer"/>
+    </listeners>
+    <test name="test1">
+        <classes>
+            <class name="learning.LoginTest">
+                <methods>
+                    <exclude name="LoginTest_enterGoodEmails_changeURL"/>
+                    <exclude name="LoginTest_enterWrongEmails_LoginErrorMsg"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="learning.ValidateNavigationBarTest">
+                <methods>
+                    <include name="validateNavBar_checkItsPresent_itsPresent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
