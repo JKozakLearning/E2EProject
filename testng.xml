@@ -22,6 +22,11 @@
                     <include name="validateNavBar_checkItsPresent_itsPresent"/>
                 </methods>
             </class>
+            <class name="learning.LoginToPracticeTest">
+                <methods>
+                    <include name="loginToPracticeSite_navigateToLoginPracticeSite_loginCorrectly"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

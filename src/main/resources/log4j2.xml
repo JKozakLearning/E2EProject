@@ -22,9 +22,19 @@
         <Logger name="learning.LoginTest" level="trace" additivity="false">
             <AppenderRef ref="File"/>
         </Logger>
-        <Logger name="learning.ValidateNavigationBarTest" level="trace" additivity="false">
+        <Logger name="learning.PracticeLoginPage" level="trace" additivity="false">
             <AppenderRef ref="File"/>
         </Logger>
+        <Logger name="learning.AcademyMainPage" level="trace" additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="learning.PracticePage" level="trace" additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="learning.LoginToPracticeTest" level="trace" additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+
         <Root level="trace">
             <AppenderRef ref="Console"/>
         </Root>

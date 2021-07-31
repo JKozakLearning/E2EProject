@@ -29,6 +29,9 @@ public class HomePage {
     @FindBy(xpath="//h2[contains(text(),'Featured Courses')]")
     private WebElement title;
 
+    @FindBy(css = "ul[class*='navbar-right'] > li:nth-child(4) > a")
+    private WebElement interviewButton;
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -59,5 +62,10 @@ public class HomePage {
 
     public String getTitleText() {
         return title.getText();
+    }
+
+    public AcademyMainPage clickInterviewButton() {
+        interviewButton.click();
+        return new AcademyMainPage(driver);
     }
 }

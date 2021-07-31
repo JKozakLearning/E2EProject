@@ -33,6 +33,7 @@ public class LoginTest extends Base {
         logingPage = homePage.clickSignInButton();
     }
 
+
     @Test(dataProvider = "getDataGoodEmails", priority = 1)
     public void LoginTest_enterGoodEmails_changeURL(String email, String password) {
         logingPage.enterEmail(email);
@@ -76,7 +77,7 @@ public class LoginTest extends Base {
         data[0][1] = "qwerty1234";
 
 
-        data[1][0] = "restricteduser2@mail.com";
+        data[1][0] = "restricteduser2_mail.com";
         data[1][1] = "qwerty1234";
 
 
