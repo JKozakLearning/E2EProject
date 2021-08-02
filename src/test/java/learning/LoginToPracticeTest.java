@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.AcademyMainPage;
@@ -30,6 +31,11 @@ public class LoginToPracticeTest extends Base{
     public void initDriver() throws IOException {
         driver = initializeDriver();
         explicitWait = new WebDriverWait(driver,10);
+    }
+
+    @AfterTest
+    public void closeDriver() {
+        driver.close();
     }
 
     @Test

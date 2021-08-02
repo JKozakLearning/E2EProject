@@ -29,4 +29,13 @@
             </class>
         </classes>
     </test>
+    <test name="test3">
+        <classes>
+            <class name="learning.SeleniumPractiseTest">
+                <methods>
+                    <include name="AddItemsToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
